@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/EloiVega/SuresAi/static/css/main.a2a8d495.css",
+    "main.js": "/EloiVega/SuresAi/static/js/main.771a4477.js",
+    "index.html": "/EloiVega/SuresAi/index.html",
+    "main.a2a8d495.css.map": "/EloiVega/SuresAi/static/css/main.a2a8d495.css.map",
+    "main.771a4477.js.map": "/EloiVega/SuresAi/static/js/main.771a4477.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2a8d495.css",
+    "static/js/main.771a4477.js"
+  ]
+}

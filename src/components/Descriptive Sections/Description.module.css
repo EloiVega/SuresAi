@@ -1,0 +1,44 @@
+.banner {
+    width: 100%;
+    height: 40%;
+  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+    color: white;
+    font-size: 30px;
+    font-family: var(--mainFont);
+    text-transform: capitalize;
+    letter-spacing: 2px;
+  
+    z-index: 1;
+    padding-left: 5%;
+    background-color: var(--mainShade);
+  
+    transform: translateX(0%);
+    transition: 0.8s;
+  }
+  
+  .slided {
+    transform: translateX(75%);
+    /* animation: sliding 0.5s forwards; */
+  }
+  
+  .descriptionText {
+    position: absolute;
+    text-align: center;
+  
+    font-weight: 600;
+    letter-spacing: 1px;
+  
+    max-width: 50%;
+    right: 35%;
+  }
+  
+  @keyframes sliding {
+    100% {
+      transform: translateX(-80%);
+    }
+  }
+  
