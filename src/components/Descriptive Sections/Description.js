@@ -4,8 +4,8 @@ import { Parallax } from "react-scroll-parallax";
 export default function Description() {
   const bannerSlideHander = (progress) => {
     const banner = document.getElementById("description-banner");
-    if (progress > 0.3) {
-      console.log(progress);
+    if (progress > 0.1 && progress < 0.9) {
+      // console.log(progress);
       banner.className = classes.banner + " " + classes.slided;
     } else {
       banner.className = classes.banner;
@@ -13,7 +13,7 @@ export default function Description() {
   };
 
   return (
-    <div className="section big-section">
+    <div className="section composite-section">
       <Parallax
         className={classes.banner}
         onProgressChange={bannerSlideHander}

@@ -1,5 +1,5 @@
 .banner {
-  width: 100%;
+  width: 50%;
   height: 40%;
 
   display: flex;
@@ -7,8 +7,8 @@
   align-items: center;
 
   color: white;
-  font-size: 30px;
-  font-family: var(--mainFont);
+  font-size: var(--titleFontSize);
+  font-family: var(--titleFont);
   text-transform: capitalize;
   letter-spacing: 2px;
 
@@ -23,16 +23,19 @@
 .rightBanner {
   padding-left: 5%;
   padding-right: 0;
+  position: absolute;
+  right: 0;
   justify-content: flex-start;
 }
 
 .slided {
-  transform: translateX(-50%);
-  /* animation: sliding 0.5s forwards; */
+  width: 28%;
+  padding-right: 0px;
+  justify-content: center;
 }
 
 .rightBanner.slided {
-  transform: translateX(50%);
+  padding-left: 0px;
 }
 
 .technologyDescription {
@@ -42,6 +45,8 @@
   font-weight: 600;
   letter-spacing: 1px;
 
+  font-size: 20px;
+
   max-width: 40%;
   left: 30%;
 }
@@ -49,5 +54,39 @@
 @keyframes sliding {
   100% {
     transform: translateX(-80%);
+  }
+}
+
+@media (max-width: 1200px) {
+  .technologyDescription {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 723px) {
+  .banner {
+    width: 10%;
+    transform: translateY(-150px);
+    height: 120px;
+
+    z-index: 1;
+
+    justify-content: center;
+  }
+
+  .rightBanner {
+    display: none;
+  }
+
+  .slided {
+    width: 100%;
+  }
+
+  .technologyDescription {
+    width: 90%;
+    max-width: 90%;
+
+    left: 50%;
+    transform: translate(-50%, 30px);
   }
 }

@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
 :root {
   --mainShade: #143d66;
   --mainFont: "Berkshire Swash", cursive;
+  --titleFont: "Fredoka One", cursive;
+  --titleFontSize: 23px;
+
+  --mediumScreen: 1200px;
 }
 
 body {
@@ -32,10 +38,26 @@ code {
   height: 40vh;
 }
 
+.composite-section {
+  height: 80vh;
+}
+
 .big-section {
   height: 80vh;
 }
 
 .shaded-section {
   background-color: var(--mainShade);
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --titleFontSize: 16px;
+  }
+}
+
+@media (max-width: 723px) {
+  .composite-section {
+    height: 50vh;
+  }
 }

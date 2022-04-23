@@ -4,8 +4,8 @@ import { Parallax } from "react-scroll-parallax";
 export default function Technology() {
   const leftBannerSlideHander = (progress) => {
     const banner = document.getElementById("left-technology-banner");
-    if (progress > 0.3) {
-      console.log(progress);
+    if (progress > 0.1 && progress < 0.9) {
+      // console.log(progress);
       banner.className = `${classes.banner} ${classes.slided}`;
     } else {
       banner.className = `${classes.banner}`;
@@ -14,8 +14,8 @@ export default function Technology() {
 
   const rightBannerSlideHander = (progress) => {
     const banner = document.getElementById("right-technology-banner");
-    if (progress > 0.3) {
-      console.log(progress);
+    if (progress > 0.1) {
+      // console.log(progress);
       banner.className = `${classes.banner} ${classes.rightBanner} ${classes.slided}` ;
     } else {
       banner.className = `${classes.banner} ${classes.rightBanner}`;
@@ -23,7 +23,7 @@ export default function Technology() {
   };
 
   return (
-    <div className="section big-section">
+    <div className="section composite-section">
       <Parallax
         className={classes.banner}
         onProgressChange={leftBannerSlideHander}
